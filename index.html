@@ -1,39 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Sylvarin Tech – Cloud & DevOps Experts</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylvarin Tech - Elite Cloud & DevOps Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Sylvarin Tech</h1>
-        <p>Cloud & DevOps Services Provider</p>
-    </header>
-    <main>
-        <section>
-            <h2>Our Services</h2>
-            <ul>
-                <li>Cloud Infrastructure Setup (AWS, Azure, GCP)</li>
-                <li>CI/CD Pipeline Automation</li>
-                <li>Containerization & Kubernetes</li>
-                <li>Monitoring & Observability</li>
-                <li>Security & Compliance</li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-cloud-arrow-up"></i>
+                <span>Sylvarin Tech</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#solutions" class="nav-link">Solutions</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-link cta-btn">Get Started</a></li>
             </ul>
-        </section>
-        <section>
-            <h2>Why Choose Us?</h2>
-            <p>We help businesses accelerate cloud adoption with secure, scalable, and cost-effective solutions. From architecture to automation, we've got you covered.</p>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <p>Email us at <a href="mailto:info@sylvarin.tech">info@sylvarin.tech</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Sylvarin Tech. All rights reserved.</p>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="highlight">Elite Cloud</span> & DevOps Solutions
+                <br>for the <span class="gradient-text">Digital Future</span>
+            </h1>
+            <p class="hero-subtitle">
+                Transform your infrastructure with cutting-edge cloud architecture, 
+                automated DevOps pipelines, and enterprise-grade security solutions.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Start Your Journey
+                </a>
+                <a href="#services" class="btn btn-secondary">
+                    <i class="fas fa-play"></i>
+                    Explore Services
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">99.9%</span>
+                    <span class="stat-label">Uptime Achieved</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Expert Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="gradient-text">Premium Services</span></h2>
+                <p>Comprehensive cloud and DevOps solutions tailored for enterprise success</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Architecture</h3>
+                    <p>Design and implement scalable, secure cloud infrastructure on AWS, Azure, and GCP with enterprise-grade reliability.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Multi-cloud strategies</li>
+                        <li><i class="fas fa-check"></i> Cost optimization</li>
+                        <li><i class="fas fa-check"></i> High availability design</li>
+                    </ul>
+                </div>
+                <div class="service-card featured">
+                    <div class="service-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>DevOps Automation</h3>
+                    <p>Streamline your development lifecycle with CI/CD pipelines, infrastructure as code, and automated deployments.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> CI/CD pipeline setup</li>
+                        <li><i class="fas fa-check"></i> Infrastructure as Code</li>
+                        <li><i class="fas fa-check"></i> Automated testing</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dharmachakra"></i>
+                    </div>
+                    <h3>Kubernetes & Containers</h3>
+                    <p>Orchestrate containerized applications with Kubernetes, Docker, and modern container technologies.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Container orchestration</li>
+                        <li><i class="fas fa-check"></i> Microservices architecture</li>
+                        <li><i class="fas fa-check"></i> Auto-scaling solutions</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security & Compliance</h3>
+                    <p>Implement zero-trust security models, compliance frameworks, and advanced threat protection.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Zero-trust architecture</li>
+                        <li><i class="fas fa-check"></i> Compliance automation</li>
+                        <li><i class="fas fa-check"></i> Security monitoring</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Monitoring & Observability</h3>
+                    <p>Gain complete visibility into your systems with advanced monitoring, logging, and alerting solutions.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Real-time monitoring</li>
+                        <li><i class="fas fa-check"></i> Custom dashboards</li>
+                        <li><i class="fas fa-check"></i> Predictive analytics</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Migration & Modernization</h3>
+                    <p>Seamlessly migrate legacy systems to cloud-native architectures with minimal downtime.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Legacy modernization</li>
+                        <li><i class="fas fa-check"></i> Zero-downtime migration</li>
+                        <li><i class="fas fa-check"></i> Performance optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Enterprise <span class="gradient-text">Solutions</span></h2>
+                <p>Industry-specific solutions designed for maximum impact</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-item">
+                    <div class="solution-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Startup Acceleration</h3>
+                    <p>Rapid cloud deployment and DevOps setup for fast-growing startups</p>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Enterprise Transformation</h3>
+                    <p>Large-scale digital transformation with enterprise-grade security</p>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Healthcare Compliance</h3>
+                    <p>HIPAA-compliant cloud solutions for healthcare organizations</p>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Financial Services</h3>
+                    <p>Secure, compliant cloud infrastructure for financial institutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Why Choose <span class="gradient-text">Sylvarin Tech</span>?</h2>
+                    <p class="about-subtitle">We are the trusted partner for organizations seeking to accelerate their cloud journey and achieve operational excellence.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Certified Experts</h4>
+                                <p>AWS, Azure, and GCP certified professionals with deep industry expertise</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-lightning-bolt"></i>
+                            <div>
+                                <h4>Rapid Deployment</h4>
+                                <p>Get your infrastructure up and running in days, not months</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-check"></i>
+                            <div>
+                                <h4>Enterprise Security</h4>
+                                <p>Bank-grade security and compliance built into every solution</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <div>
+                                <h4>24/7 Support</h4>
+                                <p>Round-the-clock monitoring and support for mission-critical systems</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="tech-stack">
+                        <div class="tech-item"><i class="fab fa-aws"></i></div>
+                        <div class="tech-item"><i class="fab fa-microsoft"></i></div>
+                        <div class="tech-item"><i class="fab fa-google"></i></div>
+                        <div class="tech-item"><i class="fab fa-docker"></i></div>
+                        <div class="tech-item"><i class="fas fa-dharmachakra"></i></div>
+                        <div class="tech-item"><i class="fab fa-jenkins"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ready to <span class="gradient-text">Transform</span> Your Infrastructure?</h2>
+                <p>Let's discuss how we can accelerate your cloud journey</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:info@sylvarin.tech">info@sylvarin.tech</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p><a href="tel:+1-555-SYLVARIN">+1 (555) SYLVARIN</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-calendar"></i>
+                        <div>
+                            <h4>Schedule a Consultation</h4>
+                            <p>Book a free 30-minute strategy session</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" placeholder="Company">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="cloud-architecture">Cloud Architecture</option>
+                                <option value="devops-automation">DevOps Automation</option>
+                                <option value="kubernetes">Kubernetes & Containers</option>
+                                <option value="security">Security & Compliance</option>
+                                <option value="monitoring">Monitoring & Observability</option>
+                                <option value="migration">Migration & Modernization</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your project" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-cloud-arrow-up"></i>
+                        <span>Sylvarin Tech</span>
+                    </div>
+                    <p>Elite Cloud & DevOps Solutions for the Digital Future</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Cloud Architecture</a></li>
+                            <li><a href="#services">DevOps Automation</a></li>
+                            <li><a href="#services">Kubernetes</a></li>
+                            <li><a href="#services">Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Solutions</h4>
+                        <ul>
+                            <li><a href="#solutions">Startup Acceleration</a></li>
+                            <li><a href="#solutions">Enterprise Transformation</a></li>
+                            <li><a href="#solutions">Healthcare Compliance</a></li>
+                            <li><a href="#solutions">Financial Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sylvarin Tech. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
