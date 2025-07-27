@@ -454,57 +454,193 @@ html {
     background: #fff;
 }
 
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+/* Founders Section */
+.founders-section {
+    margin-bottom: 4rem;
 }
 
-.about-text h2 {
-    font-size: clamp(2rem, 4vw, 2.5rem);
-    margin-bottom: 1rem;
+.founders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.founder-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    text-align: center;
+}
+
+.founder-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.founder-avatar {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.avatar-placeholder i {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.founder-info h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.founder-title {
+    font-size: 1.2rem;
+    color: #667eea;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.founder-description {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.founder-expertise {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.expertise-tag {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    color: #667eea;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+/* Company Story */
+.company-story {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 20px;
+    padding: 3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.story-content h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
     color: #1a1a1a;
 }
 
-.about-subtitle {
-    font-size: 1.1rem;
+.story-content p {
     color: #666;
-    margin-bottom: 2rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.story-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    margin-bottom: 4rem;
+}
+
+.why-choose-us h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1a1a1a;
 }
 
 .about-features {
     display: grid;
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 .feature {
     display: flex;
     gap: 1rem;
     align-items: flex-start;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
 .feature i {
     font-size: 1.5rem;
     color: #667eea;
     margin-top: 0.2rem;
+    min-width: 30px;
 }
 
 .feature h4 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
     color: #1a1a1a;
+    font-weight: 600;
 }
 
 .feature p {
     color: #666;
     line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Tech Showcase */
+.tech-showcase {
+    text-align: center;
+}
+
+.tech-showcase h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
 }
 
 .tech-stack {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .tech-item {
@@ -516,6 +652,7 @@ html {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    margin: 0 auto;
 }
 
 .tech-item:hover {
@@ -751,13 +888,41 @@ html {
         transform: none;
     }
     
-    .about-content {
+    /* Founders Section Mobile */
+    .founders-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
     
+    .founder-card {
+        padding: 2rem;
+    }
+    
+    .avatar-placeholder {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .avatar-placeholder i {
+        font-size: 2.5rem;
+    }
+    
+    .founder-info h3 {
+        font-size: 1.8rem;
+    }
+    
+    .company-story {
+        padding: 2rem;
+    }
+    
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
     .tech-stack {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
     }
     
     .contact-content {
