@@ -134,11 +134,20 @@ if (contactForm) {
         
         // Get form data
         const formData = new FormData(contactForm);
-        const formObject = Object.fromEntries(formData);
         
-        // Simulate form submission (replace with actual API call)
+        // Submit to Formspree
         try {
-            await new Promise(resolve => setTimeout(resolve, 2000));
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
             
             // Success state
             submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
