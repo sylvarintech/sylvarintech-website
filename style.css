@@ -732,6 +732,14 @@ html {
     margin-bottom: 1.5rem;
 }
 
+.form-group label {
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
 .form-group input,
 .form-group select,
 .form-group textarea {
